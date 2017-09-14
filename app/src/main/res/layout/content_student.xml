@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.dev4.attendancesystem.HomeActivity"
+    tools:showIn="@layout/app_bar_student"
+    android:background="@drawable/bg_login">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textInputLayout7"
+        android:layout_alignStart="@+id/textInputLayout7"
+        android:layout_marginRight="50dp"
+        android:theme="@style/TextLabel">
+
+        <EditText
+            android:id="@+id/studNameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textCapWords"
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:theme="@style/TextLabel"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:id="@+id/studNumberEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Student Number"
+            android:inputType="number"
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:theme="@style/TextLabel"
+        android:layout_below="@+id/textInputLayout7"
+        android:layout_alignStart="@+id/textInputLayout7">
+
+        <EditText
+            android:id="@+id/studSerialEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:hint="NFC Serial"
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/addStud"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/textInputLayout9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/addStudent"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:onClick="addStud"/>
+
+    <ImageView
+        android:id="@+id/studImg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@mipmap/ic_launcher_round"
+        android:layout_above="@+id/textInputLayout6"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

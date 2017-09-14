@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/atte"
+        android:title="Change Attendance"
+        android:icon="@drawable/ic_attendance_white"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/addStud"
+        android:title="Add Student"
+        android:icon="@drawable/ic_add_student"
+        app:showAsAction="always"
+        />
+</menu>

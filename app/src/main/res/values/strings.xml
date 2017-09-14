@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Attendance System</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_check">Check Attendance</string>
+    <string name="title_activity_add">Add Student</string>
+    <string name="title_activity_profile">Profile</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="attendanceList">Attendance List</string>
+    <string name="present">Present</string>
+    <string name="checkAttendance">Check Attendance</string>
+    <string name="addCourse">Add Course</string>
+    <string name="addStudent">Add Student</string>
+    <string name="studentList">Student List</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="profile">Profile</string>
+    <string name="signup">Sign Up</string>
+</resources>
